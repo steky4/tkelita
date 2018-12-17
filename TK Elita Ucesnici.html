@@ -2,8 +2,206 @@
 <html>
 <head>
 	<title>ucesnici</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style type="text/css">
+	body{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-image: url(pozadina1.jpg);
+		background-attachment: fixed;
+		background-repeat: repeat;
+	}
+	.crvena{
+		position: relative;
+		width: 100%;
+		height: 30%;
+		top: 3%;
+		background-color: red;
+		box-shadow: 0 0 5px black;
+	}
+	.red{
+		position: absolute;
+		width: 86%;
+		height: 96%;
+		left: 10%;
+		top: 2%;
+		background-color: white;
+		box-shadow: inset 0 0 5px black;
+		overflow-x: auto;
+	}
+	.orange{
+		position: relative;
+		width: 100%;
+		height: 30%;
+		top: 6%;
+		background-color: rgba(255, 166, 0,1);
+		box-shadow: 0 0 5px black;
+	}
+	.oranz{
+		position: absolute;
+		width: 86%;
+		height: 96%;
+		left: 10%;
+		top: 2%;
+		background-color: white;
+		box-shadow: inset 0 0 5px black;
+		overflow-x:auto;
+	}
+	.zelena{
+		position: relative;
+		width: 100%;
+		height: 30%;
+		top: 9%;
+		background-color: rgba(51, 204, 51,1);
+		box-shadow: 0 0 5px black;
+	}
+	.green{
+		position: absolute;
+		width: 86%;
+		height: 96%;
+		left: 10%;
+		top: 2%;
+		background-color: white;
+		box-shadow: inset 0 0 5px black;
+		overflow-x:auto;
+	}
+	.slik{
+		float: left;
+		position: relative;
+		margin-top: 0.15%;
+		height: 98%;
+		width: auto;
+		left: 0.1%;
+		margin-left: 0.2%;
+		right: 1%;
+		background-color: white;
+	}
+	.img{
+		float: left;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.overlay{
+		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: black;
+		opacity: 0;
+  		transition: .5s ease;
+	}
+	.slik:hover .overlay{
+		opacity: 1;
+	}
+	.natpis{
+		background-color: rgba(255, 255, 255,1);
+		height: 7%;
+		width: 100%;
+		color: black;
+		top: 0;
+		left: 0;
+		position: fixed;
+		box-shadow: 0 0 5px black;
+		text-align: center;
+	}
+	.grupe{
+		position: fixed;
+		top: 7%;
+		left: 0%;
+		width: 100%;
+		height: 93%;
+		background-color: rgba(0,0,0,0.6);
+	}
+	.poc{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 10%;
+		transition: 0.3s;
+		font-size: calc(6px + 0.3vw);
+		border-right: 1px solid red;
+	}
+	.poc:hover{
+		background-color: rgba(200,200,200,1);
+	}
+	.poc:hover .c{
+		color: white;
+	}
+</style>
 </head>
 <body>
-	<div></div>
+	<div class="natpis">
+		<a class="poc" href="index.html" style="text-decoration: none; color: black;"><h1 class="c">POČETNA</h1></a>
+	</div>
+	</div>
+	<div class="grupe">
+	<div class="crvena">
+		<div class="red">
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</div>
+	<div class="orange">
+		<div class="oranz">
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</div>
+	<div class="zelena">
+		<div class="green">
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+			<div class="slik">
+				<img src="img">
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</div>
+	</div>
 </body>
 </html>
