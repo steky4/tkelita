@@ -3,6 +3,7 @@
 <head>
 	<title>ucesnici</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <style type="text/css">
 	body{
 		position: fixed;
@@ -14,12 +15,11 @@
 	}
 	.table{
 		position: fixed;
-		width: 90%;
-		height: 75%;
-		left: 5%;
-		margin-top: 10%;
+		width: 100%;
+		height: 93%;
+		left: 0%;
+		top: 7%;
 		background-color: white;
-		box-shadow: 0 0 20px black;
 	}
 	.tale{
 		position: relative;
@@ -80,20 +80,57 @@
   		text-align: center;
 	}
 	.natpis{
-		font-size: 2vw;
 		color: white;
 		text-align: center;
 		width: 100%;
 		margin-left: auto;
 		position: absolute;
 	}
-	.text{
-		text-shadow: 2px 2px 4px #000000;
+	.natpis{
+		background-color: rgba(255, 255, 255,1);
+		height: 7%;
+		width: 100%;
+		color: black;
+		top: 0;
+		left: 0;
+		position: fixed;
+		box-shadow: 0 0 5px black;
+		text-align: center;
+		z-index: 5;
+	}
+.poc{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 30%;
+		transition: 0.3s;
+		font-size: calc(6px + 0.3vw);
+		border-right: 1px dotted black;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.poc:hover{
+		background-color: rgba(200,200,200,1);
+	}
+	.poc:hover .c{
+		color: white;
+	}
+	.uces{
+		position: absolute;
+		left: 30%;
+		top: 0%;
+		text-align: left;
+		font-size: calc(6px + 0.3vw);
+		padding-left: 5%;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	}
 </style>
 </head>
 <body>
-	<div class="natpis"><h1 class="text">RASPORED TRENINGA</h1></div>
+	<div class="natpis">
+		<a class="poc" href="index.html" style="text-decoration: none; color: black;"><h1 class="c">POČETNA</h1></a>
+		<div class="uces"><h1>RASPORED TRENINGA</h1></div>
+	</div>
 	<div class="table" style="overflow-x:auto;">
 	<table class="tale">
 		<tr>
@@ -114,7 +151,7 @@
 			<td class="sat">17:45</td>
 			<td class="sat">-</td>
 			<td class="sat">18:30</td>
-			<td class="sat spc">10:00</td>
+			<td class="sat">10:00</td>
 		</tr>
 		<tr>
 			<td class="satra1"><strong>NARANDŽASTA</strong></td>
@@ -124,7 +161,7 @@
 			<td class="sat1">-</td>
 			<td class="sat1">-</td>
 			<td class="sat1">19:30</td>
-			<td class="sat1 spc">11:00</td>
+			<td class="sat1">11:00</td>
 		</tr>
 		<tr>
 			<td class="satra2"><strong>ZELENA</strong></td>
@@ -134,7 +171,7 @@
 			<td class="sat2">19:00</td>
 			<td class="sat2">-</td>
 			<td class="sat2">20:30</td>
-			<td class="sat2 spc">12:00</td>
+			<td class="sat2">12:00</td>
 		</tr>
 	</table>
 	</div>
