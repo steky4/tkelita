@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>deoelite</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	body{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-image: url(pozadina1.jpg);
+		background-attachment: fixed;
+		background-repeat: repeat;
+	}
+	.natpis{
+		background-color: rgba(255, 255, 255,1);
+		height: 7%;
+		width: 100%;
+		color: black;
+		top: 0;
+		left: 0;
+		position: fixed;
+		box-shadow: 0 0 5px black;
+		text-align: center;
+		z-index: 5;
+	}
+	.poc{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 30%;
+		transition: 0.3s;
+		font-size: calc(6px + 0.3vw);
+		border-right: 1px dotted black;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.poc:hover{
+		background-color: rgba(50,50,50,1);
+	}
+	.poc:hover .c{
+		color: white;
+	}
+	.uces{
+		position: absolute;
+		left: 30%;
+		top: 0%;
+		text-align: left;
+		font-size: calc(6px + 0.3vw);
+		padding-left: 5%;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		transition: 0.3s;
+	}
+	.treneri{
+		position: fixed;
+		left: 0%;
+		top: 7%;
+		width: 25%;
+		height: 93%;
+		background-color: white;
+		box-shadow: 0 0 5px black;
+	}
+	.trnat{
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		height: 5%;
+		background-color: white;
+		border-bottom: 1px dotted black;
+	}
+	.tr{
+		color: black;
+		font-size: calc(12px + 0.3vw);
+		text-align: center;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		transition: 0.3s;
+	}
+	.kalup{
+		position: absolute;
+		left: 0%;
+		top: calc(5% + 1px);
+		width: 100%;
+		height: 94.90%;
+		background-color: white;
+	}
+	.slik{
+		position: relative;
+		left: 0%;
+		height: 33.33333333%;
+		width: 100%;
+		background-color: white;
+		border-bottom: 1px dotted black;
+	}
+	.overlay{
+		width: 50%;
+		background-color: white;
+		float: left;
+		height: 100%;
+		overflow-y: auto;
+
+	}
+	.slika{
+		width: 50%;
+		background-color: blue;
+		float: left;
+		height: 100%;
+	}
+	@media screen and (max-width: 800px) {
+  	.overlay, .slika {
+    width: 100%;
+    height: 50%;
+    }
+}
+	.lorem{
+	font-size: calc(6px + 0.3vw);
+	margin: calc(6px + 0.3vw);
+	}
+	</style> 
+</head>
+<body>
+	<div class="natpis">
+		<a class="poc" href="index.html" style="text-decoration: none; color: black;"><h1 class="c">POČETNA</h1></a>
+		<div class="uces"><h1> - Postani i ti deo ELITE</h1></div>
+	</div>
+	<div class="treneri">
+		<div class="trnat"><h1 class="tr">Treneri</h1></div>
+		<div class="kalup">
+		<div class="slik">
+				<img class="slika" src="img">
+				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p></div>
+			</div>
+			<div class="slik">
+				<img class="slika" src="img">
+				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p></div>
+			</div>
+			<div class="slik">
+				<img class="slika" src="img">
+				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
