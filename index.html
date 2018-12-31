@@ -128,13 +128,14 @@
   	transition: 1s;
 }
 .toggle {
-	    position: fixed;
-	align-items: center;
-	left: 47%;
-	top: 70%;
+	position: relative;
+	margin-top: 72vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 50%;
-	height: 6vw;
-	width: 6vw;
+	height: 8vh;
+	width: 8vh;
 	box-shadow: 0 0 7px rgba(0,0,0,0.7);
 	background-image: url(lop.png);
 	background-size: cover;
@@ -189,7 +190,7 @@
 		background-color: rgba(255,255,255,1);
 	}
 .poc:hover .c{
-		color: black;
+		color: rgba(91, 19, 23, 1);
 	}
 	.slova{
 		font-size: calc(20px + 1.2vw);
@@ -204,6 +205,17 @@
 		color: white;
 		transition: 0.5s;
 	}
+	.kvad{
+
+	}
+	.dev{
+		position: fixed;
+		right: 0%;
+		bottom: 0%;
+		color: rgba(91, 19, 23, 1);
+		font-size: calc(6px + 0.3vw);
+		margin-right: 1%;
+	}
 </style>
 </head>
 <body class="body">
@@ -214,7 +226,7 @@
 		<a class="poc" href="" style="text-decoration: none; color: white"><h1 class="c">NOVOSTI</h1></a>
 		<a class="poc" href="TK Elita Prijatelji.html" style="text-decoration: none; color: white"><h1 class="c">PRIJATELJI</h1></a>
 	</div>
-	<div class="toggle"></div>
+	<div class="kvad"><div class="toggle"></div></div>
 	<div id="teren">
 		<img src="grb.png" id="grb">
 	</div>
@@ -234,5 +246,6 @@
 	    	</blockquote>
 	    </div>	
 	</div>
+	<div class="dev">Dev by Steky</div>
 </body>
 </html>
