@@ -12,18 +12,18 @@
 		background-image: url(pozadina1.jpg);
 		background-attachment: fixed;
 		background-repeat: repeat;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	}
 	.natpis{
-		background-color: rgba(255, 255, 255,1);
 		height: 7%;
 		width: 100%;
-		color: black;
-		top: 0;
-		left: 0;
+		top: 0%;
+		left: 0%;
 		position: fixed;
-		box-shadow: 0 0 5px black;
 		text-align: center;
 		z-index: 5;
+		color: white;
+		border-bottom: 1px dashed white;
 	}
 	.poc{
 		position: absolute;
@@ -33,14 +33,19 @@
 		width: 30%;
 		transition: 0.3s;
 		font-size: calc(6px + 0.3vw);
-		border-right: 1px dotted black;
+		border-right: 1px dashed white;
 		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		display: table;
 	}
 	.poc:hover{
 		background-color: rgba(50,50,50,1);
 	}
 	.poc:hover .c{
 		color: white;
+	}
+	.c{
+		display: table-cell;
+		vertical-align: middle;
 	}
 	.uces{
 		position: absolute;
@@ -131,19 +136,20 @@
 		left: 0%;
 		height: 25%;
 		width: 100%;
-		background-color: white;
+		background-color: rgba(0,0,0,0.5);
 		margin-left: auto;
-		border-bottom: 1px dotted black;
+		border-bottom: 10px solid white;
 	}
 	.istorija{
+		color: white;
 		position: absolute;
-		top: 25%;
-		margin-top: 1px;		
+		top: calc(25% + 10px);		
 		left: 0%;
-		height: 75%;
+		height: calc(75% - 10px);
 		width: 100%;
-		background-color: white;
-		font-size: calc(6px + 0.8vw);
+		background-image: url(grbici.png);
+		font-size: calc(6px + 0.6vw);
+
 	}
 	.text{
 		margin-left: 7%;
@@ -166,8 +172,8 @@
 </head>
 <body>
 	<div class="natpis">
-		<a class="poc" href="index.html" style="text-decoration: none; color: black;"><h1 class="c">POČETNA</h1></a>
-		<div class="uces"><h1> - Postani i ti deo ELITE</h1></div>
+		<a class="poc" href="index.html" style="text-decoration: none; color: white;"><h1 class="c">POČETNA</h1></a>
+		<div class="uces"><h1 class="c"> - Postani i ti deo ELITE</h1></div>
 	</div>
 	<div class="Oklubu">
 		<div class="velikaslika">
