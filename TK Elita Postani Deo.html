@@ -21,9 +21,10 @@
 		left: 0%;
 		position: fixed;
 		text-align: center;
-		z-index: 5;
+		z-index: 10;
 		color: white;
 		border-bottom: 1px dashed white;
+		display: table;
 	}
 	.poc{
 		position: absolute;
@@ -38,19 +39,22 @@
 		display: table;
 	}
 	.poc:hover{
-		background-color: rgba(50,50,50,1);
+		background-color: white;
 	}
 	.poc:hover .c{
-		color: white;
+		color: rgba(91,21,19,1);
 	}
 	.c{
 		display: table-cell;
 		vertical-align: middle;
 	}
 	.uces{
+			display: table;
 		position: absolute;
 		left: 30%;
 		top: 0%;
+		width: 100%;
+		height: 100%;
 		text-align: left;
 		font-size: calc(6px + 0.3vw);
 		padding-left: 5%;
@@ -63,8 +67,7 @@
 		top: 7%;
 		width: 25%;
 		height: 93%;
-		background-color: white;
-		box-shadow: 0 0 5px black;
+		background-image: url(pozadina1.jpg);
 	}
 	.trnat{
 		position: absolute;
@@ -72,15 +75,19 @@
 		top: 0%;
 		width: 100%;
 		height: 5%;
-		background-color: white;
-		border-bottom: 1px dotted black;
+		background-color: inherit;
+		border-bottom: 1px dashed white;
+		display: table;
+
 	}
 	.tr{
-		color: black;
+		color: white;
 		font-size: calc(12px + 0.3vw);
 		text-align: center;
 		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 		transition: 0.3s;
+		display: table-cell;
+		vertical-align: middle;
 	}
 	.kalup{
 		position: absolute;
@@ -88,27 +95,29 @@
 		top: calc(5% + 1px);
 		width: 100%;
 		height: 94.90%;
-		background-color: white;
+		background-color: inherit;
+		color: white;
 	}
 	.slik{
 		position: relative;
 		left: 0%;
 		height: 33.33333333%;
 		width: 100%;
-		background-color: white;
-		border-bottom: 1px dotted black;
+		background-color: inherit;
+		border-bottom: 1px dashed white;
 	}
 	.overlay{
 		width: 50%;
-		background-color: white;
+		background: inherit;
 		float: left;
 		height: 100%;
 		overflow-y: auto;
+		background-color: rgba(0,0,0,0.3);
 
 	}
 	.slika{
 		width: 50%;
-		background-color: blue;
+		background-color: white;
 		float: left;
 		height: 100%;
 	}
@@ -119,8 +128,8 @@
     }
 }
 	.lorem{
-	font-size: calc(6px + 0.3vw);
-	margin: calc(6px + 0.3vw);
+	font-size: calc(7px + 0.3vw);
+	margin: calc(7px + 0.3vw);
 	}
 	.Oklubu{
 		position: fixed;
@@ -129,6 +138,8 @@
 		height: 93%;
 		width: 75%;
 		background-image: url(pozadina1.jpg);
+		box-shadow: inset 0 0 5px black;
+
 	}
 	.velikaslika{
 		position: absolute;
@@ -149,12 +160,13 @@
 		width: 100%;
 		background-image: url(grbici.png);
 		font-size: calc(6px + 0.6vw);
+			overflow-y: auto;
 
 	}
 	.text{
-		margin-left: 7%;
-		margin-right: 7%;
-		margin-bottom: 7%;
+		margin-left: 17%;
+		margin-right: 17%;
+		margin-bottom: auto;
 		margin-top: 3%;
 	}
 	.glup{
@@ -180,13 +192,8 @@
 			<img class="s" src="velikaslika.jpg">
 		</div>
 		<div class="istorija">
-			<h2 class="glup">O KLUBU...</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h2 class="glup">O NAMA...</h2>
+			<p class="text">Teniski klub "ELITA 2018" je najmlađi sportski klub u našem gradu. Počeli smo sa radom od avgusta 2017.-e godine.<br><br>Za kratko vreme smo načinili prve male, ali i velike korake. Klub je registrovan u TSS i TSV i aktivno učestvuje na zvaničnim takmičenjima.<br><br>Naša<strong>misija</strong>je da napravimo jednu veliku tenisku porodicu, gde će se igrati tenis na svim nivoima (dečiji, amaterski, profesionalni, porodični, drugarski...).<br><br>Naš klub odlikuje velika ljubav prema belom sportu, veliki entuzijazam i želja svih članova, kao i veliki snovi.<br><br>Iako je tenis uglavnom individualni sport, mnogo energije ulažemo u razvijanje timskog duha i stvaranje pripadnosti klubu.<br><br>TK"Elita 2018" čine 3 trenera, 29 mladih tenisera uzrasta od 4-13 godina, kao i roditelji i prijatelji koji pomažu u aktivnostima kluba.<br><br>Naš <strong>moto</strong>je: "Vera ne košta ništa, morate samo da je imate." - Novak Đoković<br><br>POSTANI I TI DEO ELITE...</p>
 		</div>
 	</div>
 	<div class="treneri">
@@ -194,24 +201,15 @@
 		<div class="kalup">
 		<div class="slik">
 				<img class="slika" src="img">
-				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p></div>
+				<div class="overlay"><p class="lorem"><strong>Milan Kotur</strong><br><br>Rođen je 09. 09. 1983. godine u Novom Sadu. Poseduje D i C licence Teniskog Saveza Srbije. Tenisom se aktivno bavi više od 10 godina, višegodišnji osvajač Inđijske ELITA lige. Koordinatoor stručnog rada u našem klubu. Odlikuju ga sistematičnost u radu, upornost, vera u velika dela i entuzijazam...</p></div>
 			</div>
 			<div class="slik">
 				<img class="slika" src="img">
-				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p></div>
+				<div class="overlay"><p class="lorem"><strong>Nemanja Zubac</strong><br><br>Rođen je .......... godine u ........... Poseduje D licencu Teniskog Saveza Srbije. Odlikuju ga pozitivan stav na treningu, želja za napretkom i rad na detaljima sa decom. Specijalnost mu je individualni rad sa takmičarskom decom...</p></div>
 			</div>
 			<div class="slik">
 				<img class="slika" src="img">
-				<div class="overlay"><p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p></div>
+				<div class="overlay"><p class="lorem"><strong>Radivojević Stefan</strong><br><br>Rođen je 14.10.1999. godine u Novom Sadu. Trenirao tenis 6. godina Najnoviji član našeg stručnog štaba. Radi sa početnicima i pomaže im da savladaju osnovne veštine. Odlikuju ga smirenost, strpljivost i velika želja za učenjem...</p></div>
 			</div>
 		</div>
 	</div>
