@@ -14,6 +14,7 @@
 		background-repeat: repeat;
 		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	}
+	
 	.table{
 		position: fixed;
 		width: calc(90% - 20px);
@@ -25,6 +26,17 @@
 		border: 10px solid white;
 
 	}
+	@media screen and (max-width: 400px) {
+  	.table{
+  	position: fixed;
+    left: 0%;
+    top: 7%;
+    width: 100%;
+    height: 93%;
+    border: none;
+    overflow-x: auto;
+    }
+}
 	.tale{
 		position: relative;
 		width: 90%;
