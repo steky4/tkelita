@@ -22,24 +22,21 @@
 		.links{
 			text-align: center;
 			position: absolute;
-			top: 40%;
+			top: 60%;
 			left: 30%;
 			height: 20%;
 			width: 40%;
 			box-shadow: 0 0 10px rgba(0,0,0,1);
 			transition: 0.5s ease;
-		}
-		.links:hover{
 			background-color: white;
-			border-radius: 10px;
 		}
 		@media screen and (max-width: 500px) {
   			.links {
   				top: 12%;
   				height: 86%;
-  				left: 5%;
-  				width: 90%;
-  				background-color: white;
+  				left: 20%;
+  				width: 60%;
+  				background-color: rgba(255,255,255,0.6);
     		}
 		}
 		.link-green{
@@ -57,8 +54,26 @@
 		}
 		@media screen and (max-width: 500px) {
   			.link-green {
-  				height: 30%;
-  				top: 3.33%;
+  				height: 26.66%;
+  				top: 10%;
+    		}
+		}
+		.grb{
+			display: block;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+			top: 7%;
+  			height: 50%;
+  			transition: .5s ease;
+		}
+		.grb:hover{
+			transform: scale(1.2);
+		}
+		@media screen and (max-width: 500px) {
+  			.grb {
+  				display: none;
     		}
 		}
 		.back{
@@ -79,9 +94,9 @@
   			.back {
   				top: 2%;
   				height: 8%;
-  				left: 5%;
-  				width: 90%;
-  				background-color: white;
+  				left: 20%;
+  				width: 60%;
+  				background-color: rgba(255,255,255,0.6);
   				color: black;
     		}
 		}
@@ -124,6 +139,7 @@
 </head>
 <body>
 	<div class="div">
+		<img src="grb.png" class="grb">
 		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
 		<div class="links">
 			<a href="#green"><img class="link-green" src="green-group.png"></a>
