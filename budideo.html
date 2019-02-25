@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budi i ti deo ELITE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			height: 1000%;
+			background-image: url(POCETNA/zastava.jpg);
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+		h2,h3,h4{
+			text-align: center;
+		}
+		.div-vrh{
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			.div-vrh{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-size: 100% 100%;
+  				height: 100%;
+  				width: 100%;
+  				border: none;	
+    		}
+		}
+		.links{
+			text-align: center;
+			position: absolute;
+			top: 80%;
+			left: 40%;
+			height: 5%;
+			width: 20%;
+			transition: 0.5s ease;
+			overflow: hidden;
+			display: table;
+			color: white;
+			font-size: calc(12px + 0.3vw);			
+			text-decoration: none;
+			z-index: 2;
+		}
+		@media screen and (max-width: 500px) {
+  			.links {
+  				top: 85%;
+  				height: 15%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+  				display: table;
+  				color: black;
+  				
+    		}
+		}
+		.links:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.links:hover h4{
+			color: black;
+		}
+		.grb{
+			display: block;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+			top: 30%;
+  			height: 40%;
+  			transition: .5s ease;
+  			z-index: 2;
+		}
+		.grb:hover{
+			transform: scale(1.2);
+		}
+		.back{
+			text-decoration: none;
+			color: white;
+			font-size: calc(12px + 0.3vw);
+			position: absolute;
+			top: 15%;
+			left: 40%;
+			height: 5%;
+			width: 20%;
+			text-align: center;
+			display: table;
+			transition: 0.5s ease;
+			
+			z-index: 2;
+		}
+		@media screen and (max-width: 500px) {
+  			.grb {
+  				display: none;
+    		}
+		}
+		.grb-transp{
+			display: none;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+			top: 17%;
+  			height: 50%;
+  			transition: .5s ease;
+		}
+		@media screen and (max-width: 500px) {
+  			.grb-transp {
+  				display: none;
+  				top: 15%;
+  				border: 2px solid white;
+  				width: calc(70% - 4px);
+  				height: auto;
+  				border-bottom: 10000px solid white;
+  				box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    		}
+		}
+		@media screen and (max-width: 500px) {
+  			.back {
+  				top: 0%;
+  				height: 15%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				color: black;
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    		}
+		}
+		h4{
+			display: table-cell;
+			vertical-align: middle;
+			transition: 0.5s ease;
+		}
+		.back:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.back:hover h4{
+			color: black;
+		}
+		.div{
+			position: absolute;
+			top: 100%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+			overflow-y: hidden;
+		}
+		.div2{
+			position: absolute;
+			top: 200%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+			text-align: center;
+		}
+		@media screen and (max-width: 500px) {
+  			.div2{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+    		}
+		}
+		.div3{
+			position: absolute;
+			top: 300%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+			overflow-y: hidden;
+		}
+		@media screen and (max-width: 500px) {
+  			.div{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-size: 100% 100%;
+  				width: 100%;
+  				height: 100%;
+  				border: none;	
+  				background-attachment: fixed;
+    		}
+		}
+		.sve{
+			top: 15%;
+			position: absolute;
+			height: 80%;
+			left: 20%;
+			width: 60%;
+			background-color: white;
+			overflow-y: auto;
+			box-shadow:  0 0 10px rgba(0,0,0,0.9);
+			text-align: center;
+		}
+		@media screen and (max-width: 500px) {
+  			.sve{
+  				top: 45%;
+  				left: 15%;
+  				width: 70%;
+  				height: 55%;
+  				overflow-y: auto;
+    		}
+		}
+		.cont-count{
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+			width: 15vh;
+			height: 15vh;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+			text-align: center;
+			color: white;			
+			border-radius: 50%;
+			transition: 0.3s;
+			box-shadow: inset 0 0 10px rgba(0,0,0,1);
+		}
+		@media screen and (max-width: 500px) {
+  			.cont-count{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+    		}
+		}
+		.count{
+			font-size: calc(40px + 0.2vw);
+			display: table-cell;
+			vertical-align: middle;
+			text-shadow: 0 0 15px rgba(0,0,0,1);
+		}
+		p{
+			padding-left: 20%; padding-right: 20%;
+		}
+		@media screen and (max-width: 500px) {
+  			p{
+  				padding: 10px;
+    		}
+		}
+		.back{
+			text-decoration: none;
+			color: white;		
+			font-size: calc(12px + 0.3vw);
+			position: absolute;
+			top: 5%;
+			left: 40%;
+			height: 5%;
+			width: 20%;
+			text-align: center;
+			display: table;
+			transition: 0.5s ease;
+			z-index: 2;
+		}
+		@media screen and (max-width: 500px) {
+  			.back {
+  				top: 0%;
+  				height: 15%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				color: black;
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    		}
+		}
+		h4{
+			display: table-cell;
+			vertical-align: middle;
+			transition: 0.5s ease;
+		}
+		.back:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.back:hover h4{
+			color: black;
+		}
+		.menu{
+			text-align: center;
+			position: fixed;
+			font-size: calc(12px + 0.3vw);
+			left: 3%;
+			top: 40%;
+			width: 15%;
+			height: 20%;			
+			color: white;
+			border: 1px solid white;
+			transition: .5s ease;
+			border: none;
+			z-index: 10;
+		}
+
+		@media screen and (max-width: 500px) {
+		.belo{
+			display: block;
+			position: absolute;
+			top: 45%;
+			left: 15%;
+			width: 70%;
+			height: 55%;
+			background-color: white;
+			}
+		}
+		@media screen and (max-width: 500px) {
+  			.menu {
+  				top: 15%;
+  				left: 15%;
+  				margin-bottom: 20px;
+   				height: 30%;
+   				width: 70%;
+   				border-right: none;
+   				color: black;
+   				background-color: rgba(255,255,255,1);
+   				z-index: 1;
+   				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    		}
+		}
+		.menu:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.menu:hover .li{
+			color: black;
+		}
+		.li{
+			display: block;
+			text-decoration-style: none;
+			text-decoration: none;
+			color: white;
+			position: relative;
+			top: 5%;
+			left: 0%;
+			height: 30%;
+			width: 100%;
+			display: table;
+
+		}
+		@media screen and (max-width: 500px) {
+  			.li {
+  				left: 0%;
+  				height: 33.33333%;
+  				top: 0%;
+  				width: 100%;
+  				color: black;
+    		}
+		}
+		.li:hover{
+			background-color: rgba(0,0,0,0.3);
+		}
+		.treneri{
+			display: inline-block;
+			width: 17%;
+			height: 70%;
+			background-color: white;
+			position: relative;
+			top: 20%;
+			margin-left: 20px;
+			margin-right: 20px;
+			transition: .3s;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			text-align: center;
+			overflow-y: auto;
+		}
+		.treneri:hover{
+			transform: scale(1.1);
+			box-shadow: 0 0 20px rgba(0,0,0,1);
+		}
+		@media screen and (max-width: 500px) {
+  			.treneri {
+  				display: block;
+  				position: relative;
+  				left: 0%;
+  				height: 210%;
+  				top: 0%;
+  				width: 100%;
+  				color: black;
+  				margin-top: 0%;
+  				margin-bottom: 0%;
+  				margin-left: 0px;
+  				margin-right: 0px;
+  				box-shadow: 0 0 0px rgba(0,0,0,0);
+  				overflow-y: auto;
+    		}
+		}
+		@media screen and (max-width: 500px) {
+  			.treneri:hover {
+  				transform: none;
+  				box-shadow: none;
+    		}
+		}
+		.slika{
+			width: 90%;
+			height: 45%;
+			left: 5%;
+			top: 2.5%;
+			position: absolute;
+		}
+		.text1{
+			top: 50%;
+			position: absolute;
+			left: 0%;
+			width: 100%;
+			height: 50%;
+			text-align: center;
+		}
+		.tren{
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			overflow-y: auto;
+		}
+		@media screen and (max-width: 500px) {
+  			.tren {
+  				width: 70%;
+  				left: 15%;
+  				top: 45%;
+  				height: 55%;
+  				overflow-y: auto;
+    		}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="div-vrh" id="start">
+
+		<img src="CLANOVI/grb.png" class="grb">
+		<img src="CLANOVI/grb-transp.png" class="grb-transp">
+		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
+
+		<div class="menu">
+			<a href="#div" class="li"><h4>O ELITI</h4></a>
+			<a href="#div2" class="li"><h4>TRENERI</h4></a>
+			<a href="#div3" class="li"><h4>KONTAKT</h4></a>
+		</div>
+		<div class="belo"></div>
+	</div>
+
+	<div class="div" id="div">
+	<a href="#start" class="back"><h4>NAZAD NA VRH</h4></a> 
+	
+
+	<div class="sve">
+		<h3>Postani i ti deo ELITE</h3>
+	<div class="ima">
+		<h3>Trenutno nas ima...</h3>
+		<div class="cont-count"><span class="count">32</span></div>
+		<strong><br>+ mnogobrojna rodbina i prijatelji</strong>
+	</div>
+	
+	<div class="text">
+		<p>Teniski klub "ELITA 2018" je najmlađi sportski klub u našem gradu. Počeli smo sa radom od avgusta 2017.-e godine.<br><br>Za kratko vreme smo načinili prve male, ali i velike korake. Klub je registrovan u TSS i TSV i aktivno učestvuje na zvaničnim takmičenjima.<br><br>Naša <strong>misija</strong> je da napravimo jednu veliku tenisku porodicu, gde će se igrati tenis na svim nivoima (dečiji, amaterski, profesionalni, porodični, drugarski...).<br><br>Naš klub odlikuje velika ljubav prema belom sportu, veliki entuzijazam i želja svih članova, kao i veliki snovi.<br><br>Iako je tenis uglavnom individualni sport, mnogo energije ulažemo u razvijanje timskog duha i stvaranje pripadnosti klubu.<br><br>TK"Elita 2018" čine 3 trenera, 29 mladih tenisera uzrasta od 4-13 godina, kao i roditelji i prijatelji koji pomažu u aktivnostima kluba.<br><br>Naš <strong>moto</strong> je: "Vera ne košta ništa, morate samo da je imate." - Novak Đoković<br><br><strong>POSTANI I TI DEO ELITE...</strong></p>
+		</p>	
+	</div>
+		
+	</div>
+	</div>
+
+
+	<div class="div2" id="div2">
+		<a href="#div" class="back"><h4>NAZAD NA VRH</h4></a>
+		<div class="tren">
+		<div class="treneri"><img class="slika" src=""><div class="text1"><h3>Milan Kotur</h3><p>Rođen je 09. 09. 1983. godine u Novom Sadu. Poseduje D i C licence Teniskog Saveza Srbije. Tenisom se aktivno bavi više od 10 godina, višegodišnji osvajač Inđijske ELITA lige. Koordinatoor stručnog rada u našem klubu. Odlikuju ga sistematičnost u radu, upornost, vera u velika dela i entuzijazam...</p></div></div>
+		<div class="treneri"><img class="slika" src=""><div class="text1"><h3>Nemanja Zubac</h3><p>Rođen je .......... godine u ........... Poseduje D licencu Teniskog Saveza Srbije. Odlikuju ga pozitivan stav na treningu, želja za napretkom i rad na detaljima sa decom. Specijalnost mu je individualni rad sa takmičarskom decom...</p></div></div>
+		<div class="treneri"><img class="slika" src=""><div class="text1"><h3>Stefan Radivojevic</h3><p>Rođen je 14.10.1999. godine u Novom Sadu. Trenirao tenis 6 godina. Najnoviji član našeg stručnog štaba. Radi sa početnicima i pomaže im da savladaju osnovne veštine. Odlikuju ga smirenost, strpljivost i velika želja za učenjem...</p></div></div>
+		</div>
+		<div class="prepreka"></div>
+	</div>
+	<div class="div3" id="div3">
+		<a href="#div" class="back"><h4>NAZAD NA VRH</h4></a> 
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('.count').each(function () {
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 3000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+	<script src="jquery.localscroll.js" type="text/javascript"></script> 
+	<script src="jquery.scrollTo.js" type="text/javascript"></script> 
+	<script type="text/javascript">
+		$('a[href*="#"]')
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      if (target.length) {
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { 
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); 
+		            $target.focus(); 
+		          };
+		        });
+		      }
+		    }
+		  });
+			</script>
+</html>
